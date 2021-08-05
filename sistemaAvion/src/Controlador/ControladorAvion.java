@@ -5,10 +5,15 @@
  */
 package Controlador;
 
+import java.util.Date;
+
 /**
  *
  * @author usuario
  */
 public class ControladorAvion {
-    
+    public Date horaSalida(){
+        Date horaSalida = new Date(0, 0, 0, 0, 0);
+        return horaSalida;
+    }
 }

@@ -10,5 +10,7 @@ package Controlador;
  * @author usuario
  */
 public class ControladorDescuentoInterface {
-    
+    public void descuentoEspecial(){
+        
+    }
 }

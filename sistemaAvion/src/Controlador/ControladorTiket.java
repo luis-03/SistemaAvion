@@ -10,5 +10,11 @@ package Controlador;
  * @author usuario
  */
 public class ControladorTiket {
+    public void generarTicket(){
+        
+    }
     
+    public void cancelar(){
+        
+    }
 }

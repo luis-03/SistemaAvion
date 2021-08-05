@@ -10,5 +10,11 @@ package Controlador;
  * @author usuario
  */
 public class ControladorVuelo {
+    public double calcularConsumo(){
+        return 0.32;
+    }
     
+    public double calcularConsumoCumbustible(){
+        return  0.12;
+    }
 }

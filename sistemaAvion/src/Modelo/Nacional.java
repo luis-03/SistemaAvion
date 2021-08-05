@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -12,24 +13,29 @@ import java.util.Date;
  * @author usuario
  */
 public class Nacional extends Vuelo {
-    private Vuelo vuelo;
+    private ArrayList<Vuelo> vuelo;
 
-    public Nacional(Vuelo vuelo, int numeroVuelo, String origen, String destino, int numeroAsiento, double costo, Date duracioin) {
+    public Nacional(ArrayList<Vuelo> vuelo, int numeroVuelo, String origen, String destino, int numeroAsiento, double costo, Date duracioin) {
         super(numeroVuelo, origen, destino, numeroAsiento, costo, duracioin);
         this.vuelo = vuelo;
     }
 
-    
-    public Vuelo getVuelo() {
+    /**
+     * @return the vuelo
+     */
+    public ArrayList<Vuelo> getVuelo() {
         return vuelo;
     }
 
     /**
      * @param vuelo the vuelo to set
      */
-    public void setVuelo(Vuelo vuelo) {
+    public void setVuelo(ArrayList<Vuelo> vuelo) {
         this.vuelo = vuelo;
     }
+    
+
+    
     
     
 }

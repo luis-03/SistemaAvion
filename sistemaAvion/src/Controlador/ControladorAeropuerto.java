@@ -10,5 +10,7 @@ package Controlador;
  * @author usuario
  */
 public class ControladorAeropuerto {
-    
+    public void autorizacionVUelo(){
+        
+    }
 }

@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -12,18 +13,31 @@ import java.util.Date;
  * @author usuario
  */
 public class Internacional extends Vuelo{
-    private Vuelo vuelo;
+    private ArrayList<Vuelo> vuelo; 
     private double impuesto;
     private boolean requiereVisa;
 
-    public Internacional(Vuelo vuelo, double impuesto, boolean requiereVisa, int numeroVuelo, String origen, String destino, int numeroAsiento, double costo, Date duracioin) {
+    public Internacional(ArrayList<Vuelo> vuelo, double impuesto, boolean requiereVisa, int numeroVuelo, String origen, String destino, int numeroAsiento, double costo, Date duracioin) {
         super(numeroVuelo, origen, destino, numeroAsiento, costo, duracioin);
         this.vuelo = vuelo;
         this.impuesto = impuesto;
         this.requiereVisa = requiereVisa;
     }
-
     
+    
+    /**
+     * @return the vuelo
+     */
+    public ArrayList<Vuelo> getVuelo() {
+        return vuelo;
+    }
+
+    /**
+     * @param vuelo the vuelo to set
+     */
+    public void setVuelo(ArrayList<Vuelo> vuelo) {
+        this.vuelo = vuelo;
+    }
 
     /**
      * @return the impuesto
@@ -52,5 +66,10 @@ public class Internacional extends Vuelo{
     public void setRequiereVisa(boolean requiereVisa) {
         this.requiereVisa = requiereVisa;
     }
+    
+    
+    
+
+  
     
 }

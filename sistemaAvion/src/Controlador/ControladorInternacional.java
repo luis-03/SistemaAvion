@@ -10,5 +10,10 @@ package Controlador;
  * @author usuario
  */
 public class ControladorInternacional {
-    
+    public void CalcularImpuesto(){
+        
+    }
+    public boolean VueloAprovado(){
+        return false;
+    }
 }
