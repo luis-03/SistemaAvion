@@ -13,9 +13,11 @@ public class SistemaAvion {
 
     /**
      * @param args the command line arguments
+     * hoal ajajjaja
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Hola jajaja");
     }
     
 }
