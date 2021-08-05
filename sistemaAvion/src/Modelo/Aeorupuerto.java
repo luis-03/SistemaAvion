@@ -10,6 +10,7 @@ package Modelo;
  * @author usuario
  */
 //Hola
+//Como estas
 public class Aeorupuerto {
     
 }
