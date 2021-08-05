@@ -5,6 +5,8 @@
  */
 package Modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author usuario
@@ -14,10 +16,14 @@ public class Internacional extends Vuelo{
     private double impuesto;
     private boolean requiereVisa;
 
-    public Internacional(double impuesto, boolean requiereVisa) {
+    public Internacional(Vuelo vuelo, double impuesto, boolean requiereVisa, int numeroVuelo, String origen, String destino, int numeroAsiento, double costo, Date duracioin) {
+        super(numeroVuelo, origen, destino, numeroAsiento, costo, duracioin);
+        this.vuelo = vuelo;
         this.impuesto = impuesto;
         this.requiereVisa = requiereVisa;
     }
+
+    
 
     /**
      * @return the impuesto
