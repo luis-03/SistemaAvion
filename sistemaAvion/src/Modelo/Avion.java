@@ -5,6 +5,7 @@
  */
 package Modelo;
 
+
 /**
  *
  * @author usuario
@@ -22,6 +23,7 @@ public class Avion {
         this.combustible = combustible;
     }
     
+
     
     public String getModelo() {
         return modelo;

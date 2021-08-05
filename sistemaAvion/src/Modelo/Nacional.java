@@ -5,10 +5,31 @@
  */
 package Modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author usuario
  */
-public class Nacional {
+public class Nacional extends Vuelo {
+    private Vuelo vuelo;
+
+    public Nacional(Vuelo vuelo, int numeroVuelo, String origen, String destino, int numeroAsiento, double costo, Date duracioin) {
+        super(numeroVuelo, origen, destino, numeroAsiento, costo, duracioin);
+        this.vuelo = vuelo;
+    }
+
+    
+    public Vuelo getVuelo() {
+        return vuelo;
+    }
+
+    /**
+     * @param vuelo the vuelo to set
+     */
+    public void setVuelo(Vuelo vuelo) {
+        this.vuelo = vuelo;
+    }
+    
     
 }
