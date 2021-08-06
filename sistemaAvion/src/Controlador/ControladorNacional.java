@@ -5,12 +5,27 @@
  */
 package Controlador;
 
+import Modelo.Vuelo;
+
+
 /**
  *
  * @author usuario
  */
-public class ControladorNacional {
+public class ControladorNacional extends Vuelo{
+    
+    public double calcularCosto(double distanciaVuelo,double duracion){
+        return  distanciaVuelo*duracion;
+    }
+            
+           
+    public  double calcularConsumoCumbustible(){
+        return 0;
+    }
+    
     public void CalcularIva(){
         
     }
+    
+            
 }

@@ -20,6 +20,7 @@ public class Nacional extends Vuelo {
         this.vuelo = vuelo;
     }
 
+    
     /**
      * @return the vuelo
      */

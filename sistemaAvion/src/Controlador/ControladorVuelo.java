@@ -5,16 +5,14 @@
  */
 package Controlador;
 
+import Modelo.Vuelo;
+
 /**
  *
  * @author usuario
  */
-public class ControladorVuelo {
-    public double calcularConsumo(){
-        return 0.32;
-    }
-    
-    public double calcularConsumoCumbustible(){
-        return  0.12;
-    }
+public abstract class ControladorVuelo {
+    Vuelo vuelo;
+    public abstract double calcularCosto();
+    public abstract double calcularConsumoCumbustible();
 }
